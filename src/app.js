@@ -7,7 +7,7 @@ import swaggerJsDoc from "swagger-jsdoc";
 const app = express();
 
 // settings
-app.set("port", process.env.PORT || 3000);
+app.set("port", process.env.PORT || 300);
 
 const options = {
   definition: {
@@ -19,7 +19,7 @@ const options = {
     },
     servers: [
       {
-        url: "https://resapi.vercel.app/",
+        url: process.env.URL,
       },
     ],
   },
