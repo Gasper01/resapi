@@ -9,6 +9,7 @@ const app = express();
 // settings
 
 app.set("port", process.env.PORT || 3000);
+
 const options = {
   definition: {
     openapi: "3.0.0",
@@ -17,10 +18,16 @@ const options = {
       version: "1.0.0",
       description: "A simple express library API",
     },
-    
+    servers: [
+      {
+        url: "https://resapi.vercel.app/",
+      },
+    ],
   },
   apis: ["./src/routes/*.js"],
 };
+
+
 const specs = swaggerJsDoc(options);
 
 // middlewares
