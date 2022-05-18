@@ -1,5 +1,5 @@
-import { app } from "./app.js";
-import { createConnection } from "./database.js";
+import { app } from "./src/app.js";
+import { createConnection } from "./src/database.js";
 
 createConnection();
 app.listen(app.get("port"));
