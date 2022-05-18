@@ -20,11 +20,11 @@ const options = {
     },
     servers: [
       {
-        url: "https://resapi.vercel.app/",
+        url: "https://resapi.vercel.app",
       },
     ],
   },
-  apis: ["./src/routes/*.js"],
+  apis: [".scr/routes/*.js"],
 };
 
 
