@@ -5,8 +5,8 @@
   "main": "src/index.js",
   
   "scripts": {
-       "start": "node src/index.js",
-    "dev": "nodemon src/index.js --ignore db.json"
+       "start": "node index.js",
+    "dev": "nodemon index.js --ignore db.json"
   },
   "keywords": [],
   "author": "",
