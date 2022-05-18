@@ -12,7 +12,7 @@ import {
 
 /**
  * @swagger
- * components:
+ * components:    
  *  schemas:
  *    Task:
  *      type: object
