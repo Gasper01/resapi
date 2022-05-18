@@ -7,7 +7,7 @@ import swaggerJsDoc from "swagger-jsdoc";
 const app = express();
 
 // settings
-app.set("port", process.env.PORT || 300);
+app.set("port", 902);
 
 const options = {
   definition: {
@@ -17,11 +17,7 @@ const options = {
       version: "1.0.0",
       description: "A simple express library API",
     },
-    servers: [
-      {
-        url: process.env.URL,
-      },
-    ],
+    
   },
   apis: ["./src/routes/*.js"],
 };
