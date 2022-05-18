@@ -1,10 +1,10 @@
-@api = http://localhost:3000/tasks
+@api = https://resapi.vercel.app/tasks
 
 ###
-GET http://localhost:3000/tasks
+GET https://resapi.vercel.app/tasks
 
 ###
-POST http://localhost:3000/tasks
+POST https://resapi.vercel.app/tasks
 Content-Type: application/json
 
 {
@@ -13,7 +13,7 @@ Content-Type: application/json
 }
 
 ### update
-PUT http://localhost:3000/tasks/34d775aa-b0de-4f7c-a9c1-58af1a29e9fe
+PUT https://resapi.vercel.app/tasks/34d775aa-b0de-4f7c-a9c1-58af1a29e9fe
 Content-Type: application/json
 
 {
