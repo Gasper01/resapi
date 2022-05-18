@@ -7,8 +7,8 @@ import swaggerJsDoc from "swagger-jsdoc";
 const app = express();
 
 // settings
-app.set("port", 902);
 
+app.set("port", process.env.PORT || 3000);
 const options = {
   definition: {
     openapi: "3.0.0",
