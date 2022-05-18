@@ -3,7 +3,8 @@ import { v4 } from "uuid";
 
 export const getTasks = (req, res) => {
   const tasks = getConnection().data.tasks;
-  res.json(tasks);
+    res.json(tasks)
+
 };
 
 export const createTask = async (req, res) => {
