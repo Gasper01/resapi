@@ -1,6 +1,6 @@
 import express from "express";
 import morgan from "morgan";
-import taskRoutes from "./routes/tasks.js";
+import taskRoutes from "./api/tasks.js";
 import swaggerUI from "swagger-ui-express";
 import swaggerJsDoc from "swagger-jsdoc";
 
@@ -24,7 +24,7 @@ const options = {
       },
     ],
   },
-  apis: [".scr/routes/*.js"],
+  apis: [".scr/api/*.js"],
 };
 
 
