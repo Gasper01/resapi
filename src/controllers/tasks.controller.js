@@ -4,10 +4,12 @@ import { getConnection } from "../database.js";
 
   export const getTasks = (req, res) => {
     try {
+
     const tasks = getConnection().data.tasks;
       res.json(tasks)
+      console.log(tasks)
     } catch (error) {
-  
+  console.log(error)
     }
   };
 
