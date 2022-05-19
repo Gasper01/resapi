@@ -2,11 +2,11 @@ import { getConnection } from "../database.js";
 /*import { v4 } from "uuid";*/
 
 
-  export const getTasks = (req, res) => {
+  export const  getTasks = async(req, res) => {
     try {
 
-    const tasks = getConnection().data.tasks;
-      res.json(tasks)
+       const tasks =getConnection().data.tasks;
+        await res.json(tasks)
       console.log(tasks)
     } catch (error) {
   console.log(error)
