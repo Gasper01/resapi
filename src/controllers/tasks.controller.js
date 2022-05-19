@@ -1,13 +1,20 @@
 import { getConnection } from "../database.js";
-import { v4 } from "uuid";
+/*import { v4 } from "uuid";*/
 
-export const getTasks = (req, res) => {
-  const tasks = getConnection().data.tasks;
-    res.json(tasks)
 
-};
+  export const getTasks = (req, res) => {
+    try {
+    const tasks = getConnection().data.tasks;
+      res.json(tasks)
+    } catch (error) {
+  
+    }
+  };
 
-export const createTask = async (req, res) => {
+
+
+
+/*export const createTask = async (req, res) => {
   const newTask = {
     id: v4(),
     name: req.body.name,
@@ -69,4 +76,4 @@ export const deleteTask = async (req, res) => {
 export const count = async (req, res) => {
   const totalTasks = getConnection().data.tasks.length;
   res.json(totalTasks);
-};
+};*/
