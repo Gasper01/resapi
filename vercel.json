@@ -6,17 +6,20 @@
             "use": "@vercel/node"
         }
     ],
+    
+    "config": {
+        "serverFiles": [
+          "api/**"
+        ]},
+
     "routes": [
         {
             "src": "/src/api/tasks.js",
             "dest": "/"
         }
-    ],
-    "config": {
-        "serverFiles": [
-          "api/**"
-        ]
+    ]
+   
   }
-}
+
   
   
